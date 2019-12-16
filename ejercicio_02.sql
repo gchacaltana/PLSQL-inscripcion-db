@@ -18,3 +18,12 @@ BEGIN
     VALUES(new_id, p_nombre, p_fechanac);
    
 END insertar_infante;
+
+-- Insertando registros
+EXECUTE insertar_infante('Samantha Ugarte',  TO_DATE('06/07/2012','dd/MM/yyyy'));
+EXECUTE insertar_infante('Vanessa Lovera',  TO_DATE('04/04/2016','dd/MM/yyyy'));
+EXECUTE insertar_infante('Ana Lucía Peralta'  ,  TO_DATE('06/05/2014','dd/MM/yyyy'));
+EXECUTE insertar_infante('Maykol Cervantes' ,  TO_DATE('08/05/2015','dd/MM/yyyy'));
+EXECUTE insertar_infante('Pedro Fernández'  ,  TO_DATE('23/03/2013','dd/MM/yyyy'));
+EXECUTE insertar_infante('Gonzalo Chacaltana',  TO_DATE('11/02/2014','dd/MM/yyyy'));
+EXECUTE insertar_infante('Luis Alberto Praetz', TO_DATE('01/12/2012','dd/MM/yyyy'));
