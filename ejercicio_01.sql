@@ -18,3 +18,9 @@ BEGIN
     VALUES(new_id, p_nombre);
    
 END;
+
+-- Insertando registros
+EXECUTE insertar_profesor('Marlene Fernández');
+EXECUTE insertar_profesor('Noelia Alvarado');
+EXECUTE insertar_profesor('Juan Jimenez');
+EXECUTE insertar_profesor('Rodolfo Balareso');
