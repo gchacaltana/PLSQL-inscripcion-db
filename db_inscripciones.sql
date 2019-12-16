@@ -44,43 +44,35 @@ CREATE TABLE premio
  
 ALTER TABLE premio
 add constraint pk_premio
-primary key(id_premio)
-;
+primary key(id_premio);
  
 ALTER TABLE infante
 add constraint pk_infante
-primary key(id_infante)
-;
+primary key(id_infante);
  
 ALTER TABLE inscripcion
 add constraint pk_inscripcion
-primary key(id_curso, id_infante, fecha_reg)
-;
+primary key(id_curso, id_infante, fecha_reg);
  
 ALTER TABLE curso
 add constraint pk_curso
-primary key(id_curso)
-;
+primary key(id_curso);
  
 ALTER TABLE profesor
 add constraint pk_profesor
-primary key(id_profesor)
-;
+primary key(id_profesor);
  
 ALTER TABLE curso
 add constraint fk_curso_profesor
 foreign key (id_profesor)
-references profesor(id_profesor)
-;
+references profesor(id_profesor);
  
 ALTER TABLE inscripcion
 add constraint fk_insc_infante
 foreign key (id_infante)
-references infante(id_infante)
-;
+references infante(id_infante);
  
 ALTER TABLE inscripcion
 add constraint fk_insc_curso
 foreign key (id_curso)
-references curso(id_curso)
-;
+references curso(id_curso);
